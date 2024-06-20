@@ -1,4 +1,4 @@
-name: 'Semantic Release Notes Preview'
+name: 'Semantic-Release Notes Preview'
 description: 'Generates and outputs a release notes preview'
 branding:
   color: 'white'
