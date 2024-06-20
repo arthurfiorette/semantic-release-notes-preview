@@ -1,14 +1,11 @@
-import semanticRelease from 'semantic-release';
+import { PluginSpec } from 'semantic-release';
 
 export function resolvePluginConfig(
-  plugins: semanticRelease.PluginSpec[],
+  plugins: PluginSpec[],
   pluginName: string,
-): semanticRelease.PluginSpec {
-  const foundConfig = plugins.find((plugin) => (
-    Array.isArray(plugin)
-      ? plugin[0] === pluginName
-      : plugin === pluginName
-  ));
+): PluginSpec {
+  // eslint-disable-next-line max-len
+  const foundConfig = plugins.find((plugin) => (Array.isArray(plugin) ? plugin[0] === pluginName : plugin === pluginName));
 
   return foundConfig ?? pluginName;
 }
