@@ -7,6 +7,11 @@ settings:
 overrides:
   unicorn-magic: 0.3.0
 
+patchedDependencies:
+  unicorn-magic:
+    hash: rxttsowuprak5eczk44ndzsgp4
+    path: patches/unicorn-magic.patch
+
 importers:
 
   .:
@@ -5545,7 +5550,7 @@ snapshots:
     dependencies:
       locate-path: 7.2.0
       path-exists: 5.0.0
-      unicorn-magic: 0.3.0
+      unicorn-magic: 0.3.0(patch_hash=rxttsowuprak5eczk44ndzsgp4)
 
   find-versions@6.0.0:
     dependencies:
@@ -5693,7 +5698,7 @@ snapshots:
       ignore: 5.3.2
       path-type: 5.0.0
       slash: 5.1.0
-      unicorn-magic: 0.3.0
+      unicorn-magic: 0.3.0(patch_hash=rxttsowuprak5eczk44ndzsgp4)
 
   gopd@1.0.1:
     dependencies:
@@ -6558,7 +6563,7 @@ snapshots:
   npm-run-path@6.0.0:
     dependencies:
       path-key: 4.0.0
-      unicorn-magic: 0.3.0
+      unicorn-magic: 0.3.0(patch_hash=rxttsowuprak5eczk44ndzsgp4)
 
   npm@10.9.2: {}
 
@@ -6794,7 +6799,7 @@ snapshots:
       normalize-package-data: 6.0.2
       parse-json: 8.1.0
       type-fest: 4.33.0
-      unicorn-magic: 0.3.0
+      unicorn-magic: 0.3.0(patch_hash=rxttsowuprak5eczk44ndzsgp4)
 
   readable-stream@2.3.8:
     dependencies:
@@ -7293,7 +7298,7 @@ snapshots:
 
   unicode-emoji-modifier-base@1.0.0: {}
 
-  unicorn-magic@0.3.0: {}
+  unicorn-magic@0.3.0(patch_hash=rxttsowuprak5eczk44ndzsgp4): {}
 
   unique-string@3.0.0:
     dependencies:

@@ -12,11 +12,8 @@ export default {
   },
   plugins: [
     typescript(),
-    resolve({
-      preferBuiltins: true,
-      exportConditions: ['node', 'default']
-    }),
+    resolve({ preferBuiltins: true }),
     commonjs({ ignoreDynamicRequires: true }),
-    json()
+    json({ compact: true,preferConst: true})
   ]
 };

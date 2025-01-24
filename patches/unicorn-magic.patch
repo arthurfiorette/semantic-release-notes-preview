@@ -1,0 +1,21 @@
+diff --git a/package.json b/package.json
+index ac4246dc7abc217ccf3863791bfada98bb9257d2..a35af5407764e299077287d5564ac203018e0c65 100644
+--- a/package.json
++++ b/package.json
+@@ -12,14 +12,8 @@
+ 	},
+ 	"type": "module",
+ 	"exports": {
+-		"node": {
+-			"types": "./node.d.ts",
+-			"import": "./node.js"
+-		},
+-		"default": {
+-			"types": "./default.d.ts",
+-			"import": "./default.js"
+-		}
++		"types": "./node.d.ts",
++		"import": "./node.js"
+ 	},
+ 	"sideEffects": false,
+ 	"engines": {

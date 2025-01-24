@@ -35,15 +35,9 @@
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
     "cosmiconfig": "^9.0.0",
-    "semantic-release": "^24.2.1"
-  },
-  "pnpm": {
-    "overrides": {
-      "unicorn-magic": "0.3.0"
-    }
-  },
-  "devDependencies": {
+    "semantic-release": "^24.2.1",
     "@commitlint/config-conventional": "^19.6.0",
+    "@rollup/plugin-alias": "^5.1.1",
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
@@ -69,5 +63,16 @@
     "ts-jest": "^29.1.5",
     "tslib": "^2.8.1",
     "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "unicorn-magic": "0.3.0"
+    },
+    "patchedDependencies": {
+      "unicorn-magic": "patches/unicorn-magic.patch"
+    }
+  },
+  "devDependencies": {
+    
   }
 }
