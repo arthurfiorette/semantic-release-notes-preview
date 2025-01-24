@@ -21,7 +21,7 @@
   "author": "Guilherme Tod <guilhermetod@gmail.com>",
   "main": "src/index.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c --bundleConfigAsCjs",
     "lint": "eslint .",
     "prepare": "husky install",
     "release": "npx semantic-release",
@@ -32,23 +32,29 @@
     "*": "npm run lint -- --fix"
   },
   "dependencies": {
-    "@actions/core": "^1.10.1",
+    "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
     "cosmiconfig": "^9.0.0",
-    "semantic-release": "^24.0.0"
+    "semantic-release": "^24.2.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "unicorn-magic": "0.3.0"
+    }
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^19.2.2",
-    "@rollup/plugin-commonjs": "^26.0.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@semantic-release/git": "^10.0.1",
     "@types/jest": "^29.5.12",
+    "@types/node": "^22.10.10",
     "@types/semantic-release": "^20.0.6",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
-    "commitlint": "^19.3.0",
+    "commitlint": "^19.6.1",
     "conventional-changelog-conventionalcommits": "^8.0.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -59,10 +65,9 @@
     "jest": "^29.7.0",
     "jest-mock": "^29.7.0",
     "lint-staged": "^15.2.7",
-    "rollup": "^4.18.0",
+    "rollup": "^4.32.0",
     "ts-jest": "^29.1.5",
-    "tslib": "^2.6.3",
-    "typescript": "^5.4.5"
-  },
-  "packageManager": "yarn@1.22.22"
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  }
 }
